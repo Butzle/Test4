@@ -15,8 +15,7 @@ public class Regex {
 	}
 	
 	public boolean matchesPattern() {
-		Pattern p = Pattern.compile("a*b[^abc]+");
-		Matcher m = p.matcher("aaaaablddslrm");
-		return m.matches();
+		Pattern pattern = Pattern.compile("AB");
+		return pattern.matcher("AB").matches();
 	}
 }
