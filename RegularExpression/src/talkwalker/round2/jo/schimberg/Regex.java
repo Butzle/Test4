@@ -3,7 +3,7 @@ package talkwalker.round2.jo.schimberg;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Regex {
+public class Regex implements Test {
 
 	private static final Regex instance = new Regex();
 
@@ -19,6 +19,10 @@ public class Regex {
 		return pattern.matcher("CABb").matches();*/
 		
 		Pattern pattern = Pattern.compile("\\d");
-		return pattern.matcher("12").matches();
+		//return pattern.matcher("12").matches();
+		
+		Pattern pattern2 = Pattern.compile("\\s?");
+		return pattern2.matcher(" ").matches();
 	}
+
 }
