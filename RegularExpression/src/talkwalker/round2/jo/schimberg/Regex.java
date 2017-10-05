@@ -15,7 +15,10 @@ public class Regex {
 	}
 	
 	public boolean matchesPattern() {
-		Pattern pattern = Pattern.compile("AB");
-		return pattern.matcher("AB").matches();
+		/*Pattern pattern = Pattern.compile(".*AB[^1-9]?");
+		return pattern.matcher("CABb").matches();*/
+		
+		Pattern pattern = Pattern.compile("\\d");
+		return pattern.matcher("12").matches();
 	}
 }
